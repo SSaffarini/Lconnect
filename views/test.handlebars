@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+<!-- <title>How to get client ip address by javascript or jquery?</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> -->
+</head>
+<body>
+  <div>How to get client ip address by javascript or jquery?</div>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+
+
+<h1>Ip Address </h1>
+<span id="ip"></span>
+<script type="text/javascript">
+$.getJSON("http://jsonip.com?callback=?", function (response) {
+$("#ip").text(response.ip);
+});
+</script>
+</body>
+</html>

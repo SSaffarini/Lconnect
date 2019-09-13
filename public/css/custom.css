@@ -1,0 +1,778 @@
+@import url('//raw.githubusercontent.com/necolas/normalize.css/master/normalize.css');
+
+/*fonts-are-here */
+
+@font-face {
+    font-family: robo-light;
+    src: url("../fonts/roboto/Roboto-Light.ttf");
+}
+@font-face {
+    font-family: robo-medium;
+    src: url("../fonts/roboto/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: robo-bold;
+    src: url("../fonts/roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: open-light;
+    src: url("../fonts/openSans/OpenSans-Light.ttf");
+}
+@font-face {
+    font-family: open-regular;
+    src: url("../fonts/openSans/OpenSans-Regular.ttf");
+}
+@font-face {
+    font-family: open-semibold;
+    src: url("../fonts/openSans/OpenSans-Semibold.ttf");
+}
+@font-face {
+    font-family: open-bold;
+    src: url("../fonts/openSans/OpenSans-Bold.ttf");
+}
+
+
+.rL{
+    font-family: robo-light;
+}
+.rM{
+    font-family: robo-medium;
+}
+.rB{
+    font-family: robo-bold;
+}
+.oL{
+    font-family: open-light;
+}
+.oR{
+    font-family: open-regular;
+}
+.oS{
+    font-family: open-semibold;
+}
+.oB{
+    font-family: open-bold;
+}
+body{
+    font-family: open-regular;
+}
+
+/*fonts-are-here */
+
+
+
+
+/*--------------------------------------*/
+
+
+
+
+/*mix-styles-are-here*/
+
+body p,
+body span,
+body a,
+body button{
+    line-height: 18pt;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+button{
+    outline: none !important;
+}
+a{
+    outline: none !important;
+    text-decoration: none !important;
+}
+.p0{
+    padding: 0;
+}
+.m0{
+    margin: 0;
+}
+.mt0{
+    margin-top: 0;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mb30{
+    margin-bottom: 30px;
+}
+.centered{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.sectionP10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sectionP20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sectionP30{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.sectionP40{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.sectionP60{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.sectionP80{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.sectionP100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.f13{
+    font-size: 13px;
+}
+.f15{
+    font-size: 15px;
+}
+.f17{
+    font-size: 17px;
+}
+.f20{
+  font-size: 20px;
+}
+.ul-style{
+    padding-left: 0;
+    list-style: none;
+}
+.relative{
+  position: relative;
+}
+.pb0{
+  padding-bottom: 0 !important;
+}
+
+/*mix-styles-are-here*/
+
+/*loader-styles-are-here*/
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    background: url('../images/preloader-small.gif') center no-repeat #fff;
+}
+
+/*loader-styles-are-here*/
+
+
+
+/*colors-are-here*/
+
+.white{
+    color: #fff;
+}
+.light{
+    color: #777;
+}
+.light2{
+    color: #bbb;
+}
+.dark{
+    color: #222;
+}
+.purple{
+    color: #6000ff;
+}
+.green{
+    color: #10D718;
+}
+.red{
+  color: red;
+}
+.header-bg{
+    background: url('http://placehold.it/1920x1200') no-repeat center top;
+    background-size: cover;
+}
+.bg-color{
+    background: rgba(96,1,255,0.65);
+}
+.bg-dark{
+    background: rgba(15,15,15,.95);
+}
+.bg-dark2{
+    background: rgba(15,15,15,.4);
+}
+
+.gradient-bg{
+    background: rgba(52,110,233,0.8);
+    background: -moz-linear-gradient(left, rgba(52,110,233,0.8) 0%, rgba(136,75,230,0.8) 100%);
+    background: -webkit-linear-gradient(left, rgba(52,110,233,0.8) 0%, rgba(136,75,230,0.8) 100%);
+    background: -o-linear-gradient(left, rgba(52,110,233,0.8) 0%, rgba(136,75,230,0.8) 100%);
+    background: -ms-linear-gradient(left, rgba(52,110,233,0.8) 0%, rgba(136,75,230,0.8) 100%);
+    background: linear-gradient(to right, rgba(52,110,233,0.8) 0%, rgba(136,75,230,0.8) 100%);
+}
+/*colors-are-here*/
+
+
+/*BUTTONS-ARE-HERE*/
+
+.purple-button{
+    background: #6000ff;
+    border: 1px solid transparent;
+    border-radius: 25px !important;
+    color: #fff;
+    font-size: 14px;
+    font-family: robo-medium;
+    padding: 10px 26px;
+    transition: all 0.3s;
+}
+.purple-button:hover{
+    color: #fff;
+    box-shadow: 0 7px 15px rgba(96,1,255,0.4);
+    transition: all 0.3s;
+}
+.purple-button:focus{
+    box-shadow: none;
+    border-color: #fff;
+    background: transparent;
+    color: #fff;
+}
+.outline-button{
+    background: transparent;
+    border: 1px solid #6000ff;
+    border-radius: 25px !important;
+    color: #6000ff;
+    font-size: 13px;
+    font-family: robo-medium;
+    padding: 10px 30px;
+    transition: all 0.3s;
+}
+.outline-button:hover{
+    background: #6000ff;
+    color: #fff;
+    box-shadow: 0 5px 25px rgba(96,1,255,0.5);
+    transition: all 0.3s;
+}
+.outline-button:focus{
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,.5);
+    background: #6000ff;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+/*BUTTONS-ARE-HERE*/
+
+
+
+
+/*NAVBAR-STYLES-ARE-HERE*/
+
+.navbar-default{
+    background: transparent;
+    border: none;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 20px;
+    border-radius: 0;
+    box-shadow: none;
+    z-index: 999;
+}
+.top-bar{
+    background: transparent;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.navbar-default .nav-style{
+    background: #fff;
+    border-radius: 6px;
+}
+.navbar-nav > li{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-left: 1px;
+}
+.navbar-default .navbar-nav > li > a{
+    padding: 10px 15px;
+    color: #777;
+    font-family: robo-medium;
+    letter-spacing: 1px;
+    border-radius: 3px;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    background: transparent;
+    color: #6000ff;
+}
+.navbar-default .navbar-nav > li.active > a{
+    background-color: transparent !important;
+    color: #777 !important;
+}
+.navbar-default .navbar-nav > li.active > a:hover{
+    background: transparent;
+    color: #6000ff !important;
+}
+.navbar-default .navbar-nav > li > a.active{
+    background-color: transparent !important;
+    color: #6000ff !important;
+}
+.navbar-brand {
+    padding: 20px;
+    float: left;
+    height: auto;
+}
+.navbar-toggle{
+    margin-top: 25px;
+}
+.nav-fixed{
+    position: fixed;
+    margin-top: 0;
+    background: #fff;
+    box-shadow: 0 7px 20px rgba(96,1,255,0.1);
+}
+.nav-fixed .nav-style{
+    border-radius: 0 0 6px 6px;
+    transition: all 0.3s;
+}
+.navbar-collapse.collapse.in{
+    max-height: 80vh !important;
+    overflow-y: scroll;
+}
+.top-bar-hide{
+    height: 0;
+    padding: 0;
+}
+
+/*NAVBAR-STYLES-ARE-HERE*/
+
+/*header-iphone-slider*/
+#owl-trans-iphone{
+    max-width: 250px;
+}
+#owl-trans-iphone .item{
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+#owl-trans-iphone .owl-controls.clickable{
+    display: none !important;
+}
+.iphone-bg{
+    background: url('../images/trans-iphone.png');
+    background-size: 100%;
+    padding: 94px 20px;
+}
+/*header-iphone-slider*/
+
+/*All-Heading-Styles*/
+.heading{
+    margin-bottom: 30px;
+}
+.heading span{
+    text-transform: uppercase;
+}
+.heading .purp-line{
+    height: 2px;
+    width: 80px;
+    background: #6000ff;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+.heading p{
+    margin-top: 20px;
+}
+.heading h1{
+    margin: 12px auto;
+}
+/*All-Heading-Styles*/
+
+/*section-2-features*/
+.feature{
+    border-radius: 5px;
+    max-width: 180px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+.feature .feature-icon{
+    font-size: 34px;
+    color: #6000ff;
+    background: rgba(96,1,255,0.05);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 35px 20px;
+    margin: 0 auto 20px auto;
+    transition: all 0.5s;
+}
+.feature .feature-desc h4{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+/*section-2-features*/
+
+/*section-3-Youtube-Video-Popup*/
+.video-bg{
+    background: url('http://placehold.it/1920x1200') bottom fixed;
+    background-size: cover;
+}
+.video-section-pad{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.play-icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    padding: 24px 20px 20px 24px;
+    background: rgba(255,255,255,0);
+    cursor: hand;
+    transition: all 0.3s;
+}
+.play-icon:hover{
+    background: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+}
+/*section-3-Youtube-Video-Popup*/
+
+/*section-4-Services*/
+.service{
+    border-radius: 5px;
+    max-width: 240px;
+    margin-bottom: 20px;
+    padding: 30px 20px;
+    transition: all 0.5s;
+}
+.service .service-icon{
+    font-size: 30px;
+    color: #fff;
+    background: #6000ff;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    padding: 30px 20px;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 7px 25px rgba(96,1,255,0.4);
+    transition: all 0.5s;
+}
+.service .service-desc h4{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.service:hover{
+    background: #fff;
+    border-color: #fff;
+    box-shadow: 0 5px 30px rgba(96,1,255,0.1);
+}
+/*section-4-Services*/
+
+/*section-5-More-Features*/
+.ul-style li{
+    background: url("../images/tick.png") no-repeat scroll 0 0;
+    margin-bottom: 25px;
+    padding-left: 40px;
+    line-height: 22pt;
+}
+/*section-5-More-Features*/
+
+/*section-6-Counter*/
+.counter-bg{
+    background: url('http://placehold.it/1920x1200') top fixed;
+    background-size: cover;
+}
+.counter{
+    background: #fff;
+    box-shadow: 0px 0px 40px rgba(96,1,255,0.3);
+    border-radius: 6px;
+    padding: 30px 20px;
+    margin-top: -75px;
+    margin-bottom: 90px;
+}
+.counter .number{
+    height: 60px;
+}
+.counter .number.br{
+    border-right: 1px solid #eee;
+}
+.counter .number .numscroller{
+    font-size: 46px;
+}
+.counter .number-text p{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+/*section-6-Counter*/
+
+/*section-7-Team*/
+.team-member{
+    max-width: 250px;
+    margin: 0 auto 20px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.team-member .person-img{
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.team-member .person-desc{
+    padding: 10px 15px;
+}
+.team-member .person-desc p{
+    margin-top: 0;
+    letter-spacing: normal;
+}
+.team-member .person-desc p span{
+    margin-left: 5px;
+}
+.team-member .person-desc a{
+    color: #bbb;
+    font-size: 15px;
+    margin-right: 8px;
+    margin-top: 5px;
+    transition: all 0.3s;
+}
+.team-member .person-desc a:hover{
+    color: #6000ff;
+    transition: all 0.3s;
+}
+.team-member:hover{
+    background: #fff;
+    box-shadow: 0 0 25px rgba(96,1,255,0.15);
+    transition: all 0.3s;
+}
+/*section-7-Team*/
+
+/*section-8-Screenshot-more-screens-slider*/
+.mobile-overlay{
+    position: absolute;
+    z-index: 45;
+    overflow: hidden;
+    width: 100%;
+}
+.mobile-overlay .fade-screen{
+    background: rgba(249,249,249,0.82);
+    padding-top: 280px;
+    padding-bottom: 220px;
+    text-align: center;
+}
+.mobile-overlay .owl-prev,
+.mobile-overlay .owl-next{
+    padding: 21px 20px 19px;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    background: transparent;
+    border-radius: 50%;
+    border: 3px solid #6000ff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.mobile-overlay .owl-prev:hover,
+.mobile-overlay .owl-next:hover{
+    background: rgba(96,1,255,.15);
+    transition: 0.3s;
+}
+.mobile-overlay .phone-image{
+    max-width: 310px;
+}
+.mobile-screens{
+    padding: 120px 0;
+}
+.mobile-screens .item img{
+    max-width: 200px;
+    margin: 0 auto;
+}
+.mobile-screens .owl-nav{
+    display: none !important;
+}
+/*section-8-Screenshot-more-screens-slider*/
+
+/*section-9-Half-screens-slider*/
+.half-owl-bg{
+    background: url('http://placehold.it/1920x1200') center fixed;
+}
+#half-owl-slider .play-icon{
+    height: 80px;
+    width: 80px;
+    padding: 18px 16px 16px 18px;
+}
+#half-owl-slider .play-icon:hover{
+    background-color: rgba(255,255,255,0.35);
+}
+#half-owl-slider .video-thumb{
+    padding: 50px;
+    border-radius: 5px;
+    background-size: cover !important;
+    background-position: center;
+}
+/*section-9-Half-screens-slider*/
+
+/*SECTION-10-TESTIMONIALS-STYLES-ARE-HERE*/
+.testimonial{
+    padding: 20px 30px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: grab;
+    transition: all 0.3s;
+}
+.testimonial h5{
+    line-height: 18pt;
+    font-size: 17px;
+}
+.testimonial h5.m20{
+    margin: 20px auto 0;
+}
+.testimonial h5 span{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.testimonial img.quote-img{
+    max-width: 60px;
+}
+.testimonial-img{
+    margin-top: -50px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.testimonial-img img{
+    width: 100%;
+}
+.testimonial:hover{
+    border-color: #6000ff;
+    background: rgba(96,1,255,0.02);
+    transition: all 0.5s;
+}
+#owl-testimonials.owl-theme .owl-controls{
+    display: none !important;
+}
+/*SECTION-10-TESTIMONIALS-STYLES-ARE-HERE*/
+
+/*section-11-Contact-Details*/
+.contactLPE{
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(96,1,255,.1);
+    margin-bottom: 30px;
+}
+.contactLPE .icon-part{
+    background: url('http://placehold.it/1920x1200') center bottom fixed;
+    width: 15%;
+    text-align: center;
+    float: left;
+}
+.contactLPE .icon-part .bg-color{
+    height: 130px;
+    padding: 60px 0;
+    width: 100%;
+}
+.contactLPE .text-part{
+    float: left;
+    padding: 15px 20px;
+    height: 100px;
+    width: 85%;
+}
+.contactLPE .text-part h5{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.contactLPE .text-part .line{
+    width: 50px;
+    background: #6000ff;
+    margin: 10px 0;
+    border-radius: 2px;
+    height: 2px;
+}
+.contactLPE .text-part p{
+    font-size: 13px;
+}
+.contactLPE .icon-part i{
+    vertical-align: middle;
+    font-size: 22px;
+}
+/*section-11-Contact-Details*/
+
+/*section-12-Contact-Form*/
+.contactDiv{
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: -130px;
+    margin-bottom: 70px;
+    overflow: hidden;
+    max-width: 760px;
+    box-shadow: 0 0 35px rgba(96,1,255,0.08);
+}
+.contactDiv .form-group{
+    width: 30.95%;
+    margin-right: 3%;
+}
+.contactDiv .form-control{
+    background: #fff;
+    border-radius: 21px;
+    padding-left: 18px;
+    border-color: #eee;
+    height: 46px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: none;
+    transition: all 0.3s;
+}
+.contactDiv textarea.form-control{
+    height: 200px;
+    padding-top: 18px;
+    width: 100%;
+}
+.contactDiv .form-control:hover,
+.contactDiv .form-control:focus{
+    border-color: #bbb;
+    transition: all 0.3s;
+}
+/*section-12-Contact-Form*/
+
+/*section-13-Footer*/
+.footer-bg{
+    background: url('http://placehold.it/1920x1200') center fixed;
+    background-size: cover;
+}
+
+footer .social{
+    margin: auto 10px;
+    font-size: 20px;
+    color: #ddd;
+}
+footer .social:hover{
+    color: #6000ff;
+}
+footer .copyRight{
+    margin-top: 30px;
+}
+footer .copyRight a{
+    padding: 5px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+footer .copyRight a:hover{
+    color: #fff;
+    background: rgba(255,255,255,0.05);
+    transition: all 0.3s;
+}
+/*section-13-Footer*/
