@@ -141,7 +141,7 @@ a{
     font-size: 15px;
 }
 .f17{
-    font-size: 17px;
+    font-size: 24px;
 }
 .f20{
   font-size: 20px;
@@ -192,7 +192,7 @@ a{
     color: #222;
 }
 .purple{
-    color: #6000ff;
+    color: #9e2a3e;
 }
 .green{
     color: #10D718;
@@ -205,7 +205,7 @@ a{
     background-size: cover;
 }
 .bg-color{
-    background: rgba(96,1,255,0.65);
+    background: rgba(15, 86, 76, 0.4);
 }
 .bg-dark{
     background: rgba(15,15,15,.95);
@@ -406,8 +406,8 @@ a{
 }
 .feature .feature-icon{
     font-size: 34px;
-    color: #6000ff;
-    background: rgba(96,1,255,0.05);
+    color: #278f96;
+    background: rgba(164, 167, 166, 0.4);
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -423,7 +423,7 @@ a{
 
 /*section-3-Youtube-Video-Popup*/
 .video-bg{
-    background: url('http://placehold.it/1920x1200') bottom fixed;
+    background: url('/images/dubai.jpg') bottom fixed;
     background-size: cover;
 }
 .video-section-pad{
@@ -457,13 +457,13 @@ a{
 .service .service-icon{
     font-size: 30px;
     color: #fff;
-    background: #6000ff;
+    background: #268f96;
     border-radius: 50%;
     width: 90px;
     height: 90px;
     padding: 30px 20px;
     margin: 0 auto 20px auto;
-    box-shadow: 0 7px 25px rgba(96,1,255,0.4);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.5);
     transition: all 0.5s;
 }
 .service .service-desc h4{
@@ -488,12 +488,12 @@ a{
 
 /*section-6-Counter*/
 .counter-bg{
-    background: url('http://placehold.it/1920x1200') top fixed;
+    background: url() top fixed;
     background-size: cover;
 }
 .counter{
     background: #fff;
-    box-shadow: 0px 0px 40px rgba(96,1,255,0.3);
+    box-shadow: 0px 0px 40px rgba(54, 53, 56, 0.6);
     border-radius: 6px;
     padding: 30px 20px;
     margin-top: -75px;
@@ -625,7 +625,7 @@ a{
 /*SECTION-10-TESTIMONIALS-STYLES-ARE-HERE*/
 .testimonial{
     padding: 20px 30px;
-    border: 1px solid #ddd;
+    border: 1px solid black;
     border-radius: 6px;
     cursor: grab;
     transition: all 0.3s;
@@ -657,7 +657,7 @@ a{
 }
 .testimonial:hover{
     border-color: #6000ff;
-    background: rgba(96,1,255,0.02);
+    background: white;
     transition: all 0.5s;
 }
 #owl-testimonials.owl-theme .owl-controls{
