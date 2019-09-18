@@ -205,7 +205,7 @@ a{
     background-size: cover;
 }
 .bg-color{
-    background: #084556;
+    background: #417581;
 }
 .bg-dark{
     background: rgba(15,15,15,.95);
@@ -424,6 +424,7 @@ a{
 /*section-3-Youtube-Video-Popup*/
 .video-bg{
     background: url('/images/dubai.jpg') bottom fixed;
+    background-color: rgba(164, 167, 166, 0);
     background-size: cover;
 }
 .video-section-pad{
@@ -457,7 +458,7 @@ a{
 .service .service-icon{
     font-size: 30px;
     color: #fff;
-    background: #13718c;
+    background: #417581;
     border-radius: 50%;
     width: 90px;
     height: 90px;
@@ -746,7 +747,153 @@ a{
     border-color: #bbb;
     transition: all 0.3s;
 }
-/*section-12-Contact-Form*/
+/*section-12-pricing table*/
+
+a{
+  text-decoration: none;
+}
+
+h5{
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  line-height: 32px;
+  padding-top: 0px;
+  a{
+    color: #66CCCC;
+  }
+}
+
+.price-table-wrapper{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  margin-top: 30px;
+
+  .featured-table{
+    box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.36);
+  }
+
+  .pricing-table{
+    display: inline-block;
+    border: 1px solid #C8C8C8;
+    border-radius: 10px;
+    background: white;
+    margin: 20px;
+    transition: all 0.3s ease-in-out;
+
+    &__header{
+      padding: 20px;
+      font-size: 20px;
+      color: #909090 ;
+      background: #E0E0E0;
+    }
+    &__price{
+      color: #66CCCC;
+      padding: 20px;
+      margin: auto;
+      font-size: 40px;
+      font-weight: 500;
+    }
+    &__button{
+      display: block;
+      background: #417581;
+      text-decoration: none;
+      padding: 20px;
+      color: white;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+
+      &:before{
+        position: absolute;
+        left: -20%;
+        top: -10%;
+        content: '';
+        width: 60%;
+        height: 220%;
+        transform: rotate(-30deg);
+        background: white;
+        opacity: .3;
+        transition: all 0.3s ease-in-out;
+      }
+
+       &:after{
+          position: absolute;
+          content: '>';
+          top: 0;
+          right: 0;
+          font-size: 25px;
+          padding: 15px;
+          padding-right: 40px;
+          color: white;
+          opacity: 0;
+         transition: all 0.3s ease-in-out;
+        }
+
+      &:hover{
+        background: black;
+      }
+    }
+    &__list{
+      padding: 10px;
+      color: #A0A0A0;
+      li{
+        padding: 10px;
+        border-bottom: 1px solid #C8C8C8 ;
+
+        &:last-child{
+          border: none;
+        }
+      }
+    }
+
+    &:hover{
+      box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.36);
+
+      .pricing-table__button{
+        padding-left: 0;
+        padding-right: 35px;
+       &:before{
+          top: -80%;
+          transform: rotate(0deg);
+          width: 100%;
+        }
+        &:after{
+          opacity: 1;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+/*my footer*/
+.dontlose{
+position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  display: block;
+  background-color: #003b50f7;
+}
+
+
+
+.buttonc {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #f1f1f1;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  text-align: center;
+}
+.buttonc:hover {
+  background: #7a9ea7;
+}
+
 
 /*section-13-Footer*/
 .footer-bg{
