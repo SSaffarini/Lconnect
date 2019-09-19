@@ -1,7 +1,7 @@
 var express = require('express');
 var exphbs  = require('express-handlebars');
-var config = require('./config');
-var googleTranslate = require('google-translate')(config.google_API_Key);
+// var config = require('./config');
+// var googleTranslate = require('google-translate')(config.google_API_Key);
 
 var app = express();
 const path = require("path");
